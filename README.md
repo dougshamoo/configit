@@ -1,1 +1,1 @@
-# gitConfigPrompt
+# configit
