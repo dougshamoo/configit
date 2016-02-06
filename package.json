@@ -1,8 +1,11 @@
 {
-  "name": "configit",
+  "name": "configit-prompt",
   "version": "0.0.1",
-  "description": "",
-  "main": "configit.js",
+  "description": "Small interactive prompt to set up git user info and defaut aliases",
+  "preferGlobal": true,
+  "bin": {
+    "configit-prompt": "configit-prompt.js"
+  },
   "dependencies": {
     "inquirer": "^0.11.0",
     "shelljs": "^0.5.3",
