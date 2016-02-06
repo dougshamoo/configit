@@ -2,16 +2,8 @@ var inquirer = require('inquirer');
 var shell = require('shelljs');
 var validator = require('validator');
 
-
+// Define question objects for inquirer prompt
 var questions = [
-
-  // name
-  // email
-  // aliases
-  //   checkboxes, default all checked
-  //   defaults:
-  //   additional custom aliases?
-
   {
     name: 'name',
     message: 'What is your full name?',
@@ -72,33 +64,40 @@ inquirer.prompt(questions, function(answers) {
   setGitInfo('name', answers.name);
   setGitInfo('email', answers.email);
 
-  // TODO: Set selected aliases to gitconfig
+  // set preset git aliases in gitconfig
+  setGitAliases(answers.aliases);
+
+  // TODO: Set custom aliases to gitconfig
 });
 
 function setGitInfo(key, info) {
-  // prefix for convenience
+  // prefix for setting gitconfig user data
   var USER_CONFIG = 'git config --global user.';
 
   // execute shell command to add or change user info
   shell.exec(USER_CONFIG + key + ' "' + info + '"');
 }
 
-function setGitAlias(aliasStrings) {
+function setGitAliases(aliasStrings) {
+  // prefix for setting gitconfig alias
+  ALIAS_CONFIG = 'git config --global alias.';
   PRESET_ALIASES = {
     co: 'checkout',
     ci: 'commit',
     st: 'status',
     br: 'branch',
     mr: 'merge',
-    hist: 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short',
+    hist: "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short",
     type: 'cat-file -t',
     dump: 'cat-file -p',
   };
 
-  //TODO: execute shell commands to set git aliases
-  // for each element in aliasStrings
-    // get alias, everything before the ':'
-    // get git command from PRESET_ALIASES
-    // run shell command to add them to gitconfig
+  aliasStrings.forEach(function(string) {
+    // get alias
+    var alias = string.split(':')[0];
+
+    // execute shell command to add or change alias
+    shell.exec(ALIAS_CONFIG + alias + ' "' + PRESET_ALIASES[alias] + '"');
+  });
 }
 
