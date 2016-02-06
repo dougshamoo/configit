@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var inquirer = require('inquirer');
 var shell = require('shelljs');
 var validator = require('validator');
