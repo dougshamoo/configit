@@ -1,6 +1,6 @@
 {
   "name": "configit-prompt",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Small interactive prompt to set up git user info and defaut aliases",
   "preferGlobal": true,
   "bin": {
