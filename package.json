@@ -4,7 +4,7 @@
   "description": "Small interactive prompt to set up git user info and defaut aliases",
   "preferGlobal": true,
   "bin": {
-    "configit-prompt": "gitconfig-prompt.js"
+    "gitconfig-prompt": "gitconfig-prompt.js"
   },
   "dependencies": {
     "inquirer": "^0.11.0",
