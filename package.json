@@ -1,10 +1,10 @@
 {
-  "name": "configit-prompt",
+  "name": "gitconfig-prompt",
   "version": "0.1.0",
   "description": "Small interactive prompt to set up git user info and defaut aliases",
   "preferGlobal": true,
   "bin": {
-    "configit-prompt": "configit-prompt.js"
+    "configit-prompt": "gitconfig-prompt.js"
   },
   "dependencies": {
     "inquirer": "^0.11.0",
