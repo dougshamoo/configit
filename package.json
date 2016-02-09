@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dougshamoo/configit.git"
+    "url": "git+https://github.com/dougshamoo/gitconfig-prompt.git"
   },
   "keywords": [
     "git",
@@ -27,7 +27,7 @@
   "author": "Doug Shamoo <doug.shamoo@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dougshamoo/configit/issues"
+    "url": "https://github.com/dougshamoo/gitconfig-prompt/issues"
   },
-  "homepage": "https://github.com/dougshamoo/configit#readme"
+  "homepage": "https://github.com/dougshamoo/gitconfig-prompt#readme"
 }
