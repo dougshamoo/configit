@@ -1,12 +1,6 @@
 # gitconfig-prompt
-A small interactive prompt to set up git user info and defaut aliases
-
-# gitconfig-prompt
 
 > *"Set gitconfig user info and default aliases with a helpful prompt"*
-
-## Web App
-#### [rmindr.herokuapp.com](http://rmindr.herokuapp.com)
 
 ## Table of Contents
 
@@ -14,7 +8,7 @@ A small interactive prompt to set up git user info and defaut aliases
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
+    1. [Roadmap](#roadmap)
 1. [Contributing](#contributing)
 
 ## Usage
