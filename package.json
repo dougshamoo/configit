@@ -1,6 +1,6 @@
 {
   "name": "gitconfig-prompt",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Small interactive prompt to set up git user info and defaut aliases",
   "readmeFilename": "README.md",
   "preferGlobal": true,
